@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Science of Re-Fresh – Focus, Hydration, Energy</title>
+    <meta
+      name="description"
+      content="See how Re-Fresh combines clean caffeine, electrolytes, and nootropics to keep you focused without the crash."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__logo">Re-<span>Fresh</span></div>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="flavors.html">Flavors</a>
+        <a href="science.html">Science</a>
+        <a href="reviews.html">Reviews & FAQ</a>
+      </nav>
+      <button class="nav__cta" onclick="goToFlavors()">Shop Now</button>
+      <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section__header">
+          <h2>The science behind the sip.</h2>
+          <p>
+            Re-Fresh is formulated to keep you locked in and hydrated — not
+            overcaffeinated and crashing.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--grid" id="science">
+        <div></div>
+        <div class="science">
+          <div class="science__card">
+            <h3>Smart caffeine curve</h3>
+            <p>
+              Our blend of green coffee bean caffeine and L-theanine smooths out your
+              energy curve, so you feel alert without the heart-racing jitters.
+            </p>
+          </div>
+          <div class="science__card">
+            <h3>Focus-forward stack</h3>
+            <p>
+              B3, B6, and B12 support your brain’s natural energy metabolism, helping
+              you stay locked in on deep work or clutch plays.
+            </p>
+          </div>
+          <div class="science__card">
+            <h3>Stay hydrated, stay sharp</h3>
+            <p>
+              Caffeine is a mild diuretic — that’s why we added electrolytes to help
+              balance it out and keep you feeling good over long sessions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta">
+        <div class="section--cta__inner">
+          <div>
+            <h2>Put the science to the test.</h2>
+            <p>
+              Try the Mixed Starter Pack and feel the difference between jittery
+              energy and clean focus.
+            </p>
+          </div>
+          <button class="btn btn--primary btn--large" onclick="goToFlavors()">
+            Build Your Box
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__brand">Re-<span>Fresh</span></div>
+      <p class="footer__text">Front-end demo. No real products are being sold.</p>
+      <p class="footer__text footer__small">
+        Built with HTML, CSS, and JavaScript. Ready to plug into Stripe, Shopify,
+        or a custom backend when you are.
+      </p>
+    </footer>
+
+    <div class="toast" id="toast">Added to cart</div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+

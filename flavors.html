@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Re-Fresh Flavors – Build Your Stack</title>
+    <meta
+      name="description"
+      content="Explore Re-Fresh flavors and build your perfect energy stack."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__logo">Re-<span>Fresh</span></div>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="flavors.html">Flavors</a>
+        <a href="science.html">Science</a>
+        <a href="reviews.html">Reviews & FAQ</a>
+      </nav>
+      <button class="nav__cta" onclick="goToFlavors()">Cart</button>
+      <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section__header">
+          <h2>Pick your flavor. Start your stack.</h2>
+          <p>
+            Start with a mixed starter pack or lock in your favorite flavor. Cart is
+            stored in your browser so you can move between pages freely.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--store" id="storeSection">
+        <div class="store" id="store">
+          <article class="product-card" data-product-id="starter">
+            <div class="product-card__tag">Best for first-timers</div>
+            <h3>Mixed Starter Pack</h3>
+            <p class="product-card__subtitle">12 cans • 3 flavors</p>
+            <p class="product-card__price">$29.00</p>
+            <ul class="product-card__list">
+              <li>4x Crisp Citrus Charge</li>
+              <li>4x Midnight Berry</li>
+              <li>4x Electric Lime</li>
+            </ul>
+            <div class="product-card__footer">
+              <div class="quantity">
+                <button class="quantity__btn" data-action="decrement">-</button>
+                <input
+                  type="number"
+                  min="1"
+                  value="1"
+                  aria-label="Quantity for Mixed Starter Pack"
+                />
+                <button class="quantity__btn" data-action="increment">+</button>
+              </div>
+              <button
+                class="btn btn--primary product-card__btn"
+                data-product-name="Mixed Starter Pack"
+                data-product-price="29"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-id="citrus">
+            <h3>Crisp Citrus Charge</h3>
+            <p class="product-card__subtitle">12 cans</p>
+            <p class="product-card__price">$27.00</p>
+            <ul class="product-card__list">
+              <li>Tastes like a sparkling lemon-lime soda</li>
+              <li>Bright, clean finish</li>
+            </ul>
+            <div class="product-card__footer">
+              <div class="quantity">
+                <button class="quantity__btn" data-action="decrement">-</button>
+                <input
+                  type="number"
+                  min="1"
+                  value="1"
+                  aria-label="Quantity for Crisp Citrus Charge"
+                />
+                <button class="quantity__btn" data-action="increment">+</button>
+              </div>
+              <button
+                class="btn btn--ghost product-card__btn"
+                data-product-name="Crisp Citrus Charge"
+                data-product-price="27"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-id="berry">
+            <h3>Midnight Berry</h3>
+            <p class="product-card__subtitle">12 cans</p>
+            <p class="product-card__price">$27.00</p>
+            <ul class="product-card__list">
+              <li>Dark berry with a hint of pomegranate</li>
+              <li>Perfect for late sessions</li>
+            </ul>
+            <div class="product-card__footer">
+              <div class="quantity">
+                <button class="quantity__btn" data-action="decrement">-</button>
+                <input
+                  type="number"
+                  min="1"
+                  value="1"
+                  aria-label="Quantity for Midnight Berry"
+                />
+                <button class="quantity__btn" data-action="increment">+</button>
+              </div>
+              <button
+                class="btn btn--ghost product-card__btn"
+                data-product-name="Midnight Berry"
+                data-product-price="27"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <aside class="cart" id="cart">
+          <h3>Your Cart</h3>
+          <div class="cart__items" id="cartItems">
+            <p class="cart__empty">
+              Your cart is empty. Add a pack to get started.
+            </p>
+          </div>
+          <div class="cart__summary">
+            <div class="cart__row">
+              <span>Subtotal</span>
+              <span id="cartSubtotal">$0.00</span>
+            </div>
+            <p class="cart__hint">
+              This is a demo front-end only cart. Connect this to Stripe, Shopify,
+              or your preferred platform for real payments.
+            </p>
+            <button class="btn btn--primary btn--full" id="checkoutBtn">
+              Checkout (Demo)
+            </button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__brand">Re-<span>Fresh</span></div>
+      <p class="footer__text">Front-end demo. No real products are being sold.</p>
+      <p class="footer__text footer__small">
+        Built with HTML, CSS, and JavaScript. Ready to plug into Stripe, Shopify,
+        or a custom backend when you are.
+      </p>
+    </footer>
+
+    <div class="toast" id="toast">Added to cart</div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
