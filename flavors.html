@@ -21,9 +21,10 @@
       <div class="nav__logo">Re-<span>Fresh</span></div>
       <nav class="nav__links">
         <a href="index.html">Home</a>
-        <a href="flavors.html">Flavors</a>
+        <a href="flavors.html" class="active">Flavors</a>
         <a href="science.html">Science</a>
         <a href="reviews.html">Reviews & FAQ</a>
+        <a href="about.html">About</a>
       </nav>
       <button class="nav__cta" onclick="goToFlavors()">Cart</button>
       <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
@@ -33,7 +34,7 @@
 
     <main>
       <section class="section">
-        <div class="section__header">
+        <div class="section__header section__header--center">
           <h2>Pick your flavor. Start your stack.</h2>
           <p>
             Start with a mixed starter pack or lock in your favorite flavor. Cart is
@@ -42,108 +43,136 @@
         </div>
       </section>
 
-      <section class="section section--store" id="storeSection">
-        <div class="store" id="store">
-          <article class="product-card" data-product-id="starter">
-            <div class="product-card__image">
-              <img src="assets/Gemini_Generated_Image_l679jpl679jpl679.png" alt="Mixed Starter Pack" />
-            </div>
-            <div class="product-card__tag">Best for first-timers</div>
-            <h3>Mixed Starter Pack</h3>
-            <p class="product-card__subtitle">12 cans • 3 flavors</p>
-            <p class="product-card__price">$29.00</p>
-            <ul class="product-card__list">
-              <li>4x Crisp Citrus Charge</li>
-              <li>4x Midnight Berry</li>
-              <li>4x Electric Lime</li>
-            </ul>
-            <div class="product-card__footer">
-              <div class="quantity">
-                <button class="quantity__btn" data-action="decrement">-</button>
-                <input
-                  type="number"
-                  min="1"
-                  value="1"
-                  aria-label="Quantity for Mixed Starter Pack"
-                />
-                <button class="quantity__btn" data-action="increment">+</button>
+      <div class="flavors-layout">
+        <div class="flavors-products">
+          <section class="section section--product">
+            <article class="product-card product-card--large" data-product-id="starter">
+              <div class="product-card__image product-card__image--large">
+                <img src="assets/Gemini_Generated_Image_l679jpl679jpl679.png" alt="Mixed Starter Pack" />
               </div>
-              <button
-                class="btn btn--primary product-card__btn"
-                data-product-name="Mixed Starter Pack"
-                data-product-price="29"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </article>
+              <div class="product-card__content">
+                <div class="product-card__tag">Best for first-timers</div>
+                <h3>Mixed Starter Pack</h3>
+                <p class="product-card__subtitle">12 cans • 3 flavors</p>
+                <p class="product-card__price">$29.00</p>
+                <p class="product-card__description">
+                  Perfect for first-time customers. Try all three flavors and discover your favorite. 
+                  Each pack includes 4 cans of each flavor for a complete tasting experience.
+                </p>
+                <ul class="product-card__list">
+                  <li>4x Crisp Citrus Charge</li>
+                  <li>4x Midnight Berry</li>
+                  <li>4x Electric Lime</li>
+                </ul>
+                <div class="product-card__footer">
+                  <div class="quantity">
+                    <button class="quantity__btn" data-action="decrement">-</button>
+                    <input
+                      type="number"
+                      min="1"
+                      value="1"
+                      aria-label="Quantity for Mixed Starter Pack"
+                    />
+                    <button class="quantity__btn" data-action="increment">+</button>
+                  </div>
+                  <button
+                    class="btn btn--primary product-card__btn"
+                    data-product-name="Mixed Starter Pack"
+                    data-product-price="29"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
 
-          <article class="product-card" data-product-id="citrus">
-            <div class="product-card__image">
-              <img src="assets/Gemini_Generated_Image_l679jpl679jpl679 (1).png" alt="Crisp Citrus Charge" />
-            </div>
-            <h3>Crisp Citrus Charge</h3>
-            <p class="product-card__subtitle">12 cans</p>
-            <p class="product-card__price">$27.00</p>
-            <ul class="product-card__list">
-              <li>Tastes like a sparkling lemon-lime soda</li>
-              <li>Bright, clean finish</li>
-            </ul>
-            <div class="product-card__footer">
-              <div class="quantity">
-                <button class="quantity__btn" data-action="decrement">-</button>
-                <input
-                  type="number"
-                  min="1"
-                  value="1"
-                  aria-label="Quantity for Crisp Citrus Charge"
-                />
-                <button class="quantity__btn" data-action="increment">+</button>
+          <section class="section section--product">
+            <article class="product-card product-card--large" data-product-id="citrus">
+              <div class="product-card__image product-card__image--large">
+                <img src="assets/Gemini_Generated_Image_l679jpl679jpl679 (1).png" alt="Crisp Citrus Charge" />
               </div>
-              <button
-                class="btn btn--ghost product-card__btn"
-                data-product-name="Crisp Citrus Charge"
-                data-product-price="27"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </article>
+              <div class="product-card__content">
+                <h3>Crisp Citrus Charge</h3>
+                <p class="product-card__subtitle">12 cans</p>
+                <p class="product-card__price">$27.00</p>
+                <p class="product-card__description">
+                  A refreshing blend of lemon and lime that tastes like a premium sparkling soda. 
+                  Bright, clean, and energizing—perfect for morning starts or afternoon pick-me-ups.
+                </p>
+                <ul class="product-card__list">
+                  <li>Tastes like a sparkling lemon-lime soda</li>
+                  <li>Bright, clean finish</li>
+                  <li>160mg clean caffeine</li>
+                  <li>Zero sugar, 10 calories</li>
+                </ul>
+                <div class="product-card__footer">
+                  <div class="quantity">
+                    <button class="quantity__btn" data-action="decrement">-</button>
+                    <input
+                      type="number"
+                      min="1"
+                      value="1"
+                      aria-label="Quantity for Crisp Citrus Charge"
+                    />
+                    <button class="quantity__btn" data-action="increment">+</button>
+                  </div>
+                  <button
+                    class="btn btn--primary product-card__btn"
+                    data-product-name="Crisp Citrus Charge"
+                    data-product-price="27"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
 
-          <article class="product-card" data-product-id="berry">
-            <div class="product-card__image">
-              <img src="assets/Gemini_Generated_Image_l679jpl679jpl679 (2).png" alt="Midnight Berry" />
-            </div>
-            <h3>Midnight Berry</h3>
-            <p class="product-card__subtitle">12 cans</p>
-            <p class="product-card__price">$27.00</p>
-            <ul class="product-card__list">
-              <li>Dark berry with a hint of pomegranate</li>
-              <li>Perfect for late sessions</li>
-            </ul>
-            <div class="product-card__footer">
-              <div class="quantity">
-                <button class="quantity__btn" data-action="decrement">-</button>
-                <input
-                  type="number"
-                  min="1"
-                  value="1"
-                  aria-label="Quantity for Midnight Berry"
-                />
-                <button class="quantity__btn" data-action="increment">+</button>
+          <section class="section section--product">
+            <article class="product-card product-card--large" data-product-id="berry">
+              <div class="product-card__image product-card__image--large">
+                <img src="assets/Gemini_Generated_Image_l679jpl679jpl679 (2).png" alt="Midnight Berry" />
               </div>
-              <button
-                class="btn btn--ghost product-card__btn"
-                data-product-name="Midnight Berry"
-                data-product-price="27"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </article>
+              <div class="product-card__content">
+                <h3>Midnight Berry</h3>
+                <p class="product-card__subtitle">12 cans</p>
+                <p class="product-card__price">$27.00</p>
+                <p class="product-card__description">
+                  Deep, rich berry flavor with hints of pomegranate. Perfect for late-night work sessions, 
+                  gaming marathons, or whenever you need sustained energy without the crash.
+                </p>
+                <ul class="product-card__list">
+                  <li>Dark berry with a hint of pomegranate</li>
+                  <li>Perfect for late sessions</li>
+                  <li>160mg clean caffeine</li>
+                  <li>Zero sugar, 10 calories</li>
+                </ul>
+                <div class="product-card__footer">
+                  <div class="quantity">
+                    <button class="quantity__btn" data-action="decrement">-</button>
+                    <input
+                      type="number"
+                      min="1"
+                      value="1"
+                      aria-label="Quantity for Midnight Berry"
+                    />
+                    <button class="quantity__btn" data-action="increment">+</button>
+                  </div>
+                  <button
+                    class="btn btn--primary product-card__btn"
+                    data-product-name="Midnight Berry"
+                    data-product-price="27"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
         </div>
 
-        <aside class="cart" id="cart">
+        <aside class="cart cart--sticky" id="cart">
           <h3>Your Cart</h3>
           <div class="cart__items" id="cartItems">
             <p class="cart__empty">
@@ -164,16 +193,16 @@
             </button>
           </div>
         </aside>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="footer__brand">Re-<span>Fresh</span></div>
       <p class="footer__text">Front-end demo. No real products are being sold.</p>
-      <p class="footer__text footer__small">
+      <!-- <p class="footer__text footer__small">
         Built with HTML, CSS, and JavaScript. Ready to plug into Stripe, Shopify,
         or a custom backend when you are.
-      </p>
+      </p> -->
     </footer>
 
     <div class="toast" id="toast">Added to cart</div>

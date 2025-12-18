@@ -20,10 +20,11 @@
     <header class="nav">
       <div class="nav__logo">Re-<span>Fresh</span></div>
       <nav class="nav__links">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="flavors.html">Flavors</a>
         <a href="science.html">Science</a>
         <a href="reviews.html">Reviews & FAQ</a>
+        <a href="about.html">About</a>
       </nav>
       <button class="nav__cta" onclick="goToFlavors()">Shop Now</button>
       <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
@@ -35,142 +36,62 @@
       <!-- HERO -->
       <section class="hero" id="top">
         <div class="hero__content">
-          <p class="hero__eyebrow">Clean Energy • No Crash • Zero Compromise</p>
-          <h1 class="hero__title">
-            Re-<span>Fresh</span> your energy.<br />
-            Stay sharp, never shaky.
-          </h1>
+          <h1 class="hero__title">Re-Fresh Energy Drink</h1>
           <p class="hero__subtitle">
-            160mg clean caffeine, electrolytes, and B-vitamins in a crisp sparkling
-            drink. No sugar. No weird aftertaste. Just focus.
+            Clean energy with 160mg caffeine, zero sugar, and electrolytes. 
+            Stay focused without the crash.
           </p>
           <div class="hero__actions">
             <button class="btn btn--primary" onclick="goToFlavors()">
-              Shop Starter Pack
-            </button>
-            <button class="btn btn--ghost" onclick="goToScience()">
-              See what’s inside
+              Shop Now
             </button>
           </div>
-          <div class="hero__meta">
-            <div>
-              <strong>160 mg</strong>
-              <span>Clean caffeine</span>
+          <div class="hero__details">
+            <div class="hero__detail-item">
+              <span class="hero__detail-label">160mg</span>
+              <span class="hero__detail-text">Caffeine</span>
             </div>
-            <div>
-              <strong>0 g</strong>
-              <span>Sugar, 10 cals</span>
+            <div class="hero__detail-item">
+              <span class="hero__detail-label">0g</span>
+              <span class="hero__detail-text">Sugar</span>
             </div>
-            <div>
-              <strong>4.9 / 5</strong>
-              <span>Average rating</span>
+            <div class="hero__detail-item">
+              <span class="hero__detail-label">10</span>
+              <span class="hero__detail-text">Calories</span>
             </div>
-          </div>
-        </div>
-        <div class="hero__visual">
-          <div class="hero__product-image">
-            <img src="assets/Gemini_Generated_Image_l679jpl679jpl679.png" alt="Re-Fresh Energy Drink" />
-          </div>
-          <div class="hero__card">
-            <p>Starter Pack (12 cans)</p>
-            <p class="hero__price">$29.00</p>
-            <p class="hero__note">Head to the Flavors page to build your first box.</p>
           </div>
         </div>
       </section>
 
-      <!-- PRODUCT HIGHLIGHTS -->
-      <section class="section section--grid">
-        <div class="section__header">
-          <h2>Energy that feels as good as it tastes.</h2>
-          <p>
-            Designed for deep work, late-night grinds, and long gaming sessions —
-            without the sugar spike or 3PM crash.
-          </p>
-        </div>
-        <div class="features">
-          <article class="feature">
+      <!-- PRODUCT INFO -->
+      <section class="section section--info">
+        <div class="info-grid">
+          <div class="info-item">
             <h3>Clean Caffeine</h3>
-            <p>
-              160mg of caffeine from green coffee beans for smooth, long-lasting
-              energy — not the jittery kind.
-            </p>
-          </article>
-          <article class="feature">
-            <h3>Hydration Built-In</h3>
-            <p>
-              Electrolytes (sodium, potassium, magnesium) help you stay hydrated
-              while you power through.
-            </p>
-          </article>
-          <article class="feature">
-            <h3>Brain-First Formula</h3>
-            <p>
-              B-vitamins and L-theanine support focus, mental clarity, and calm
-              alertness.
-            </p>
-          </article>
-          <article class="feature">
-            <h3>Zero Sugar, 10 Calories</h3>
-            <p>
-              Naturally sweetened, gluten-free, and vegan-friendly so you can feel
-              good about every can.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- MINI CART PREVIEW (READ-ONLY SUMMARY) -->
-      <section class="section">
-        <div class="section__header section__header--center">
-          <h2>Your current Re-Fresh stack</h2>
-          <p>
-            Anything you add on the Flavors page follows you across the site. Cart is
-            stored in your browser only.
-          </p>
-        </div>
-        <div class="cart cart--compact" id="cart">
-          <h3>Your Cart</h3>
-          <div class="cart__items" id="cartItems">
-            <p class="cart__empty">Your cart is empty. Visit the Flavors page to start.</p>
+            <p>160mg from green coffee beans for smooth, sustained energy without jitters.</p>
           </div>
-          <div class="cart__summary">
-            <div class="cart__row">
-              <span>Subtotal</span>
-              <span id="cartSubtotal">$0.00</span>
-            </div>
-            <p class="cart__hint">
-              This cart is a front-end demo only. To add or edit items, go to the
-              Flavors page.
-            </p>
-            <div style="display:flex;gap:0.6rem;">
-              <button
-                class="btn btn--ghost btn--full"
-                type="button"
-                onclick="goToFlavors()"
-              >
-                Edit Cart
-              </button>
-              <button class="btn btn--primary btn--full" id="checkoutBtn">
-                Checkout (Demo)
-              </button>
-            </div>
+          <div class="info-item">
+            <h3>Electrolytes</h3>
+            <p>Sodium, potassium, and magnesium to keep you hydrated and balanced.</p>
+          </div>
+          <div class="info-item">
+            <h3>B-Vitamins</h3>
+            <p>Supports mental clarity and focus for your best performance.</p>
+          </div>
+          <div class="info-item">
+            <h3>Zero Sugar</h3>
+            <p>Naturally sweetened, gluten-free, and vegan-friendly.</p>
           </div>
         </div>
       </section>
 
-      <!-- FINAL CTA -->
-      <section class="section section--cta">
-        <div class="section--cta__inner">
-          <div>
-            <h2>Ready to Re-Fresh your energy?</h2>
-            <p>
-              Grab the Mixed Starter Pack on the Flavors page and see which flavor
-              powers your best work.
-            </p>
-          </div>
+      <!-- SHOP CTA -->
+      <section class="section section--shop">
+        <div class="shop-cta">
+          <h2>Explore Our Flavors</h2>
+          <p>Choose from our starter pack or individual flavors</p>
           <button class="btn btn--primary btn--large" onclick="goToFlavors()">
-            Explore Flavors
+            View Products
           </button>
         </div>
       </section>
@@ -179,10 +100,9 @@
     <footer class="footer">
       <div class="footer__brand">Re-<span>Fresh</span></div>
       <p class="footer__text">Front-end demo. No real products are being sold.</p>
-      <p class="footer__text footer__small">
-        Built with HTML, CSS, and JavaScript. Ready to plug into Stripe, Shopify,
-        or a custom backend when you are.
-      </p>
+      <!-- <p class="footer__text footer__small">
+        Built with HTML, CSS, and JavaScript. Ready to plug into Stripe, Shopify, etc.
+      </p> -->
     </footer>
 
     <div class="toast" id="toast">Added to cart</div>
@@ -190,5 +110,6 @@
     <script src="script.js"></script>
   </body>
   </html>
+
 
 
