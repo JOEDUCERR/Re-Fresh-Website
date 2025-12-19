@@ -85,24 +85,141 @@
         </div>
       </section>
 
+      <!-- WHY CHOOSE RE-FRESH -->
+      <section class="section">
+        <div class="section__header section__header--center">
+          <h2>Why Choose Re-Fresh</h2>
+          <p>Designed for professionals, creators, and anyone who demands peak performance.</p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h3>Sustained Energy</h3>
+            <p>No sudden spikes or crashes. Our formula delivers smooth, consistent energy that lasts throughout your day.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Clean Ingredients</h3>
+            <p>Every ingredient is carefully selected for quality and effectiveness. No artificial additives or hidden sugars.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Better Focus</h3>
+            <p>Enhanced with B-vitamins and L-theanine to support mental clarity and sustained concentration.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Hydration Support</h3>
+            <p>Electrolytes help maintain fluid balance, so you stay hydrated while staying energized.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="section section--alt">
+        <div class="section__header section__header--center">
+          <h2>How It Works</h2>
+          <p>Three simple steps to better energy</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">1</div>
+            <h3>Choose Your Flavor</h3>
+            <p>Select from our range of refreshing flavors or try our mixed starter pack.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">2</div>
+            <h3>Add to Cart</h3>
+            <p>Build your perfect energy stack with our flexible ordering system.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">3</div>
+            <h3>Stay Energized</h3>
+            <p>Enjoy clean, sustained energy without the crash. Feel the difference.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS PREVIEW -->
+      <section class="section">
+        <div class="section__header section__header--center">
+          <h2>Trusted by Professionals</h2>
+          <p>Join thousands who have made the switch to clean energy</p>
+        </div>
+        <div class="testimonials-preview">
+          <div class="testimonial-preview">
+            <p class="testimonial-preview__quote">"Best energy drink I've tried. No jitters, no crash, just clean focus."</p>
+            <p class="testimonial-preview__author">— Sarah M., Software Developer</p>
+          </div>
+          <div class="testimonial-preview">
+            <p class="testimonial-preview__quote">"Perfect for my late-night coding sessions. The taste is amazing too."</p>
+            <p class="testimonial-preview__author">— James K., Product Designer</p>
+          </div>
+          <div class="testimonial-preview">
+            <p class="testimonial-preview__quote">"Finally, an energy drink that doesn't make me feel wired. Just energized."</p>
+            <p class="testimonial-preview__author">— Emma L., Content Creator</p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="reviews.html" style="color: var(--accent); text-decoration: none; font-weight: 500;">Read more reviews →</a>
+        </div>
+      </section>
+
       <!-- SHOP CTA -->
       <section class="section section--shop">
         <div class="shop-cta">
-          <h2>Explore Our Flavors</h2>
-          <p>Choose from our starter pack or individual flavors</p>
+          <h2>Ready to Experience Clean Energy?</h2>
+          <p>Start with our Mixed Starter Pack and discover your favorite flavor</p>
           <button class="btn btn--primary btn--large" onclick="goToFlavors()">
-            View Products
+            Shop Now
           </button>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__brand">Re-<span>Fresh</span></div>
-      <p class="footer__text">Front-end demo. No real products are being sold.</p>
-      <!-- <p class="footer__text footer__small">
-        Built with HTML, CSS, and JavaScript. Ready to plug into Stripe, Shopify, etc.
-      </p> -->
+      <div class="footer__content">
+        <div class="footer__section">
+          <div class="footer__brand">Re-<span>Fresh</span></div>
+          <p class="footer__description">Clean energy for peak performance. Zero sugar, zero compromise.</p>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavors.html">Flavors</a></li>
+            <li><a href="science.html">Science</a></li>
+            <li><a href="reviews.html">Reviews & FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__contact">
+            <li>Email: <a href="mailto:hello@refresh-energy.com">hello@refresh-energy.com</a></li>
+            <li>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></li>
+            <li>Huddersfield, United Kingdom</li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Subscribe</h4>
+          <p class="footer__subscribe-text">Get updates on new flavors and exclusive offers</p>
+          <form class="footer__subscribe" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" class="footer__email-input" required />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 Re-Fresh Energy. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
     </footer>
 
     <div class="toast" id="toast">Added to cart</div>
