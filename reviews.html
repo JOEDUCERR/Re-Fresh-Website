@@ -120,12 +120,52 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__brand">Re-<span>Fresh</span></div>
-      <p class="footer__text">Front-end demo. No real products are being sold.</p>
-      <!-- <p class="footer__text footer__small">
-        Built with HTML, CSS, and JavaScript. Ready to plug into Stripe, Shopify,
-        or a custom backend when you are.
-      </p> -->
+      <div class="footer__content">
+        <div class="footer__section">
+          <div class="footer__brand">Re-<span>Fresh</span></div>
+          <p class="footer__description">Clean energy for peak performance. Zero sugar, zero compromise.</p>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavors.html">Flavors</a></li>
+            <li><a href="science.html">Science</a></li>
+            <li><a href="reviews.html">Reviews & FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__contact">
+            <li>Email: <a href="mailto:hello@refresh-energy.com">hello@refresh-energy.com</a></li>
+            <li>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></li>
+            <li>Huddersfield, United Kingdom</li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Subscribe</h4>
+          <p class="footer__subscribe-text">Get updates on new flavors and exclusive offers</p>
+          <form class="footer__subscribe" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" class="footer__email-input" required />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 Re-Fresh Energy. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
     </footer>
 
     <div class="toast" id="toast">Added to cart</div>
