@@ -1638,3 +1638,31 @@ main {
   border-radius: 100px;
   font-weight: 500;
 }
+
+/* Custom Scrollbar Styles */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) rgba(15, 23, 42, 0.1);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.1);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 4px;
+  border: 2px solid rgba(15, 23, 42, 0.1);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #149b5159;
+}
